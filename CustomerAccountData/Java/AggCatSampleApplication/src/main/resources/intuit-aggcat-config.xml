@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<intuit-config>
+	<saml>
+		<keystoreFile>INSERT KEYSTORE.JKS FILE / FILE PATH</keystoreFile>
+		<keystorePassword>INSERT KEYSTORE PASSWORD</keystorePassword>
+		<keyPassword>INSERT KEY PASSWORD</keyPassword>
+		<certAlias>INSERT CERTIFICATE ALIAS</certAlias>
+	</saml>
+</intuit-config>
