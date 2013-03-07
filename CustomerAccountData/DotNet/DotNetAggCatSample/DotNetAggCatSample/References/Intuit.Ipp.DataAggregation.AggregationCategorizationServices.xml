@@ -1,0 +1,569 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Intuit.Ipp.DataAggregation.AggregationCategorizationServices</name>
+    </assembly>
+    <members>
+        <member name="T:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.NamespaceDoc">
+            <summary>
+            Intuit.Ipp.DataAggregation.AggregationCategorizationServices assembly has AggregationCategorizationService class that 
+            has public methods required to call Intuit Aggregation and Categorization Service APIs such as GetInsititions, DiscoverAndAddAccounts, and so forth.  
+            The IAggregationCategorizationService provides an interface for invoking the Aggregation and Categorization service APIs.
+            </summary>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.IAggregationCategorizationService">
+            <summary>
+            Interface for Aggregation and Categorization Service.
+            </summary>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.IAggregationCategorizationService.GetInstitutions">
+            <summary>
+            Gets a list of institutions supported for data acquisition.
+            </summary>
+            <returns>Returns a list of institutions.</returns>        
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.IAggregationCategorizationService.GetInstitutionDetails(System.Int64)">
+            <summary>
+            Gets detailed information for the supplied institution ID.
+            </summary>
+            <param name="institutionId">The institution id.</param>
+            <returns>Returns institution details.</returns>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.IAggregationCategorizationService.GetCustomerAccounts">
+            <summary>
+            Gets a list of all accounts belonging to the authenticated user making the call.
+            </summary>
+            <returns>Returns accounts list.</returns>        
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.IAggregationCategorizationService.GetLoginAccounts(System.Int64)">
+            <summary>
+            Gets a list of all accounts belonging to the login specified in the URI path.
+            </summary>
+            <param name="institutionLoginId">The login id.</param>
+            <returns>Returns account list.</returns>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.IAggregationCategorizationService.GetAccount(System.Int64)">
+            <summary>
+            Gets all information about the account. 
+            If the last refresh date of the account is older than the “refresh-cache-seconds-to-live”, 
+            a non-interactive refresh of that account is attempted before it is returned. 
+            If that refresh fails the account will still be returned, but the aggrSuccessDate field of the 
+            account data will not be updated and a numeric error code indicating the reason for the failure will be found in the aggrStatusCode field.
+            </summary>
+            <param name="accountId">The account id.</param>
+            <returns>Returns account list.</returns>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.IAggregationCategorizationService.GetAccountTransactions(System.Int64,System.DateTime)">
+            <summary>
+            Retrieves all transactions for an account over the specified date range. 
+            </summary>
+            <param name="accountId">The account id.</param>
+            <param name="startDate">The start date.</param>
+            <returns>Returns transaction list.</returns>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.IAggregationCategorizationService.GetAccountTransactions(System.Int64,System.DateTime,System.DateTime)">
+            <summary>
+            Retrieves all transactions for an account over the specified date range. 
+            If the end date of the range is later than the last successful refresh date of the account, 
+            a refresh will be attempted before transactions are retrieved. If the refresh fails, the TransactionList 
+            is still returned but will have details of the failure in the notRefreshedReason attribute of the TransactionList entity.
+            </summary>
+            <param name="accountId">The account id.</param>
+            <param name="startDate">The start date.</param>
+            <param name="endDate">The end date.</param>
+            <returns>Returns transaction list.</returns>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.IAggregationCategorizationService.UpdateAccountType(System.Int64,Intuit.Ipp.DataAggregation.Data.Account)">
+            <summary>
+            Updates the type of an account from "Other" to some concrete account type.
+            </summary>
+            <param name="accountId">The account id.</param>
+            <param name="account">The account.</param>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.IAggregationCategorizationService.DeleteAccount(System.Int64)">
+            <summary>
+            Deletes a user's account. Successful deletions returns a 200 status code with no body while a failed 
+            deletion will return the appropriate http status code and gives the error code/message in the body.
+            </summary>
+            <param name="accountId">The account id.</param>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.IAggregationCategorizationService.DeleteCustomer">
+            <summary>
+            Deletes the currently authenticated customer.
+            </summary>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.IAggregationCategorizationService.UpdateInstitutionLogin(System.Int64,Intuit.Ipp.DataAggregation.Data.InstitutionLogin,Intuit.Ipp.DataAggregation.Data.Challenges@)">
+            <summary>
+            Update the account type of an added account.
+            As a result of this call, the user may receive a 201 indicating that accounts have been updated, 
+            or a 401 meaning the user must provide additional authentication data in order to complete the discovery. 
+            In the latter case, a Challenges entity will be present in the response body indicating the information the user must provide to continue. 
+            The user supplies this information in the form of a ChallengeResponses entity that is posted to this same URL ommitting the Credentials from the secondary request.
+            </summary>
+            <param name="institutionLoginId">The login id.</param>
+            <param name="institutionLogin">The institution login.</param>
+            <param name="challenges">The challenges for MFA request.</param>
+            <returns>True if the operation was successful</returns>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.IAggregationCategorizationService.UpdateInstitutionLogin(System.Int64,Intuit.Ipp.DataAggregation.Data.InstitutionLogin,System.Boolean,Intuit.Ipp.DataAggregation.Data.Challenges@)">
+            <summary>
+            Update the account type of an added account.
+            As a result of this call, the user may receive a 201 indicating that accounts have been updated, 
+            or a 401 meaning the user must provide additional authentication data in order to complete the discovery. 
+            In the latter case, a Challenges entity will be present in the response body indicating the information the user must provide to continue. 
+            The user supplies this information in the form of a ChallengeResponses entity that is posted to this same URL ommitting the Credentials from the secondary request.
+            </summary>
+            <param name="institutionLoginId">The login id.</param>
+            <param name="institutionLogin">The institution login. This value can be null when dealing with non restricted FIs</param>
+            <param name="refresh">Indicator that an explicit refresh is requested</param>
+            <param name="challenges">The challenges for MFA request.</param>
+            <returns>True is successfully updated account type of the added account.</returns>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.IAggregationCategorizationService.UpdateInstitutionLoginResponse(Intuit.Ipp.DataAggregation.Data.ChallengeResponses)">
+            <summary>
+            Update the account type of an added account.
+            As a result of this call, the user may receive a 201 indicating that accounts have been updated, 
+            or a 401 meaning the user must provide additional authentication data in order to complete the discovery. 
+            In the latter case, a Challenges entity will be present in the response body indicating the information the user must provide to continue. 
+            The user supplies this information in the form of a ChallengeResponses entity that is posted to this same URL ommitting the Credentials from the secondary request.
+            </summary>
+            <param name="challengeResponses">Challenge responses.</param>
+            <returns>True is successfully updated account type of the added account.</returns>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.IAggregationCategorizationService.UpdateInstitutionLogin(System.Int64,Intuit.Ipp.DataAggregation.Data.InstitutionLogin,Intuit.Ipp.DataAggregation.Data.Challenges@,Intuit.Ipp.DataAggregation.AggregationCategorizationServices.ChallengeSession@)">
+            <summary>
+            Update the account type of an added account.
+            As a result of this call, the user may receive a 201 indicating that accounts have been updated, 
+            or a 401 meaning the user must provide additional authentication data in order to complete the discovery. 
+            In the latter case, a Challenges entity will be present in the response body indicating the information the user must provide to continue. 
+            The user supplies this information in the form of a ChallengeResponses entity that is posted to this same URL ommitting the Credentials from the secondary request.
+            </summary>
+            <param name="institutionLoginId">The login id.</param>
+            <param name="institutionLogin">The institution login.</param>
+            <param name="challenges">The challenges for MFA request.</param>
+            <param name="challengeSession">Challenge Session information required for MFA call.</param>
+            <returns>True if the operation was successful</returns>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.IAggregationCategorizationService.UpdateInstitutionLogin(System.Int64,Intuit.Ipp.DataAggregation.Data.InstitutionLogin,System.Boolean,Intuit.Ipp.DataAggregation.Data.Challenges@,Intuit.Ipp.DataAggregation.AggregationCategorizationServices.ChallengeSession@)">
+            <summary>
+            Update the account type of an added account.
+            As a result of this call, the user may receive a 201 indicating that accounts have been updated, 
+            or a 401 meaning the user must provide additional authentication data in order to complete the discovery. 
+            In the latter case, a Challenges entity will be present in the response body indicating the information the user must provide to continue. 
+            The user supplies this information in the form of a ChallengeResponses entity that is posted to this same URL ommitting the Credentials from the secondary request.
+            </summary>
+            <param name="institutionLoginId">The login id.</param>
+            <param name="institutionLogin">The institution login. This value can be null when dealing with non restricted FIs</param>
+            <param name="refresh">Indicator that an explicit refresh is requested</param>
+            <param name="challenges">The challenges for MFA request.</param>
+            <param name="challengeSession">Challenge Session information required for MFA call.</param>
+            <returns>True is successfully updated account type of the added account.</returns>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.IAggregationCategorizationService.UpdateInstitutionLoginResponse(Intuit.Ipp.DataAggregation.Data.ChallengeResponses,Intuit.Ipp.DataAggregation.AggregationCategorizationServices.ChallengeSession)">
+            <summary>
+            Update the account type of an added account.
+            As a result of this call, the user may receive a 201 indicating that accounts have been updated, 
+            or a 401 meaning the user must provide additional authentication data in order to complete the discovery. 
+            In the latter case, a Challenges entity will be present in the response body indicating the information the user must provide to continue. 
+            The user supplies this information in the form of a ChallengeResponses entity that is posted to this same URL ommitting the Credentials from the secondary request.
+            </summary>
+            <param name="challengeResponses">Challenge responses.</param>
+            <param name="challengeSession">Challenge Session Information required for MFA call.</param>
+            <returns>True is successfully updated account type of the added account.</returns>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.IAggregationCategorizationService.DiscoverAndAddAccounts(System.Int64,Intuit.Ipp.DataAggregation.Data.InstitutionLogin,Intuit.Ipp.DataAggregation.Data.Challenges@)">
+            <summary>
+            This API will discover a user’s accounts at an external FI and add them to the CustomerCentral system. 
+            As a result of this call, the user may receive a 201 indicating that accounts have been discovered, 
+            or a 401 meaning the user must provide additional authentication data in order to complete the discovery. 
+            In the latter case, a Challenges entity will be present in the response body indicating the information the user must provide to continue. 
+            The user supplies this information in the form of a ChallengeResponses entity that is posted to this same URL ommitting the Credentials from the secondary request.
+            </summary>
+            <param name="institutionId">The institution id.</param>
+            <param name="institutionLogin">The institution login.</param>
+            <param name="challenges">Challenges if the request requires MFA.</param>
+            <returns>Account List if it is non mfa request.</returns>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.IAggregationCategorizationService.DiscoverAndAddAccountsResponse(Intuit.Ipp.DataAggregation.Data.ChallengeResponses)">
+            <summary>
+            This API will discover a user’s accounts at an external FI and add them to the CustomerCentral system. 
+            As a result of this call, the user may receive a 201 indicating that accounts have been discovered, 
+            or a 401 meaning the user must provide additional authentication data in order to complete the discovery. 
+            In the latter case, a Challenges entity will be present in the response body indicating the information the user must provide to continue. 
+            The user supplies this information in the form of a ChallengeResponses entity that is posted to this same URL ommitting the Credentials from the secondary request.
+            </summary>
+            <param name="challengeResponses">The challenge Responses.</param>
+            <returns>Account List if it is non mfa request.</returns>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.IAggregationCategorizationService.DiscoverAndAddAccounts(System.Int64,Intuit.Ipp.DataAggregation.Data.InstitutionLogin,Intuit.Ipp.DataAggregation.Data.Challenges@,Intuit.Ipp.DataAggregation.AggregationCategorizationServices.ChallengeSession@)">
+            <summary>
+            This API will discover a user’s accounts at an external FI and add them to the CustomerCentral system. 
+            As a result of this call, the user may receive a 201 indicating that accounts have been discovered, 
+            or a 401 meaning the user must provide additional authentication data in order to complete the discovery. 
+            In the latter case, a Challenges entity will be present in the response body indicating the information the user must provide to continue. 
+            The user supplies this information in the form of a ChallengeResponses entity that is posted to this same URL ommitting the Credentials from the secondary request.
+            </summary>
+            <param name="institutionId">The institution id.</param>
+            <param name="institutionLogin">The institution login.</param>
+            <param name="challenges">Challenges if the request requires MFA.</param>
+            <param name="challengeSession">Challenge session information required for MFA call.</param>
+            <returns>Account List if it is non mfa request.</returns>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.IAggregationCategorizationService.DiscoverAndAddAccountsResponse(Intuit.Ipp.DataAggregation.Data.ChallengeResponses,Intuit.Ipp.DataAggregation.AggregationCategorizationServices.ChallengeSession)">
+            <summary>
+            This API will discover a user’s accounts at an external FI and add them to the CustomerCentral system. 
+            As a result of this call, the user may receive a 201 indicating that accounts have been discovered, 
+            or a 401 meaning the user must provide additional authentication data in order to complete the discovery. 
+            In the latter case, a Challenges entity will be present in the response body indicating the information the user must provide to continue. 
+            The user supplies this information in the form of a ChallengeResponses entity that is posted to this same URL ommitting the Credentials from the secondary request.
+            </summary>
+            <param name="challengeResponses">The challenge Responses.</param>
+            <param name="challengeSession">Challenge session information required for MFA call.</param>
+            <returns>Account List if it is non mfa request.</returns>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.ChallengeSession">
+            <summary>
+            Challenge Session Information.
+            </summary>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.ChallengeSession.ChallengeSessionId">
+            <summary>
+            Gets or sets the Challenge Session Id Value.
+            </summary>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.ChallengeSession.ChallengeNodeId">
+            <summary>
+            Gets or sets the Challenge Node Id Value.
+            </summary>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.ChallengeSession.Id">
+            <summary>
+            Gets or sets the Id value which can be both InstitutionId and InstitutionLoginId.
+            </summary>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.AggregationCategorizationService">
+            <summary>
+            Implementation class for Aggregation and Categorization Service.
+            </summary>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.AggregationCategorizationService.serviceContext">
+            <summary>
+            The service context object.
+            </summary>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.AggregationCategorizationService.challengeNodeId">
+            <summary>
+            Challenge Node Id.
+            </summary>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.AggregationCategorizationService.challengeSessionId">
+            <summary>
+            Challenge Session Id.
+            </summary>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.AggregationCategorizationService.institutionId">
+            <summary>
+            Institution Id.
+            </summary>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.AggregationCategorizationService.institutionLoginId">
+            <summary>
+            Institution Login Id.
+            </summary>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.AggregationCategorizationService.#ctor(Intuit.Ipp.DataAggregation.Core.ServiceContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.AggregationCategorizationService"/> class.
+            </summary>
+            <param name="serviceContext">The service context object.</param>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.AggregationCategorizationService.GetInstitutions">
+            <summary>
+            Gets a list of institutions supported for data acquisition.
+            </summary>
+            <returns>Returns a list of institutions.</returns>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.AggregationCategorizationService.GetInstitutionDetails(System.Int64)">
+            <summary>
+            Gets detailed information for the supplied institution ID.
+            </summary>
+            <param name="institutionId">The institution id.</param>
+            <returns>Returns institution details.</returns>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.AggregationCategorizationService.GetCustomerAccounts">
+            <summary>
+            Gets a list of all accounts belonging to the authenticated user making the call.
+            </summary>
+            <returns>Returns accounts list.</returns>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.AggregationCategorizationService.GetLoginAccounts(System.Int64)">
+            <summary>
+            Gets a list of all accounts belonging to the login specified in the URI path.
+            </summary>
+            <param name="institutionLoginId">The login id.</param>
+            <returns>Returns account list.</returns>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.AggregationCategorizationService.GetAccount(System.Int64)">
+            <summary>
+            Gets all information about the account. 
+            If the last refresh date of the account is older than the “refresh-cache-seconds-to-live”, 
+            a non-interactive refresh of that account is attempted before it is returned. 
+            If that refresh fails the account will still be returned, but the aggrSuccessDate field of the 
+            account data will not be updated and a numeric error code indicating the reason for the failure will be found in the aggrStatusCode field.
+            </summary>
+            <param name="accountId">The account id.</param>
+            <returns>Returns account list.</returns>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.AggregationCategorizationService.GetAccountTransactions(System.Int64,System.DateTime)">
+            <summary>
+            Retrieves all transactions for an account. 
+            </summary>
+            <param name="accountId">The account id.</param>
+            <param name="startDate">The start date.</param>
+            <returns>Returns transaction list.</returns>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.AggregationCategorizationService.GetAccountTransactions(System.Int64,System.DateTime,System.DateTime)">
+            <summary>
+            Retrieves all transactions for an account over the specified date range. 
+            If the end date of the range is later than the last successful refresh date of the account, 
+            a refresh will be attempted before transactions are retrieved. If the refresh fails, the TransactionList 
+            is still returned but will have details of the failure in the notRefreshedReason attribute of the TransactionList entity.
+            </summary>
+            <param name="accountId">The account id.</param>
+            <param name="startDate">The start date.</param>
+            <param name="endDate">The end date.</param>
+            <returns>Returns transaction list.</returns>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.AggregationCategorizationService.UpdateAccountType(System.Int64,Intuit.Ipp.DataAggregation.Data.Account)">
+            <summary>
+            Updates the type of an account from "Other" to some concrete account type.
+            </summary>
+            <param name="accountId">The account id.</param>
+            <param name="account">The account.</param>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.AggregationCategorizationService.DeleteAccount(System.Int64)">
+            <summary>
+            Deletes a user's account. Successful deletions returns a 200 status code with no body while a failed 
+            deletion will return the appropriate http status code and gives the error code/message in the body.
+            </summary>
+            <param name="accountId">The account id.</param>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.AggregationCategorizationService.DeleteCustomer">
+            <summary>
+            Deletes the currently authenticated customer.
+            </summary>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.AggregationCategorizationService.UpdateInstitutionLogin(System.Int64,Intuit.Ipp.DataAggregation.Data.InstitutionLogin,Intuit.Ipp.DataAggregation.Data.Challenges@)">
+            <summary>
+            Update the account type of an added account.
+            As a result of this call, the user may receive a 201 indicating that accounts have been updated, 
+            or a 401 meaning the user must provide additional authentication data in order to complete the discovery. 
+            In the latter case, a Challenges entity will be present in the response body indicating the information the user must provide to continue. 
+            The user supplies this information in the form of a ChallengeResponses entity that is posted to this same URL ommitting the Credentials from the secondary request.
+            </summary>
+            <param name="institutionLoginId">The login id.</param>
+            <param name="institutionLogin">The institution login.</param>
+            <param name="challenges">The challenges for MFA request.</param>
+            <returns>True if the operation was successful</returns>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.AggregationCategorizationService.UpdateInstitutionLogin(System.Int64,Intuit.Ipp.DataAggregation.Data.InstitutionLogin,System.Boolean,Intuit.Ipp.DataAggregation.Data.Challenges@)">
+            <summary>
+            Update the account type of an added account.
+            As a result of this call, the user may receive a 201 indicating that accounts have been updated, 
+            or a 401 meaning the user must provide additional authentication data in order to complete the discovery. 
+            In the latter case, a Challenges entity will be present in the response body indicating the information the user must provide to continue. 
+            The user supplies this information in the form of a ChallengeResponses entity that is posted to this same URL ommitting the Credentials from the secondary request.
+            </summary>
+            <param name="institutionLoginId">The login id.</param>
+            <param name="institutionLogin">The institution login. This value can be null when dealing with non restricted FIs</param>
+            <param name="refresh">Indicator that an explicit refresh is requested</param>
+            <param name="challenges">The challenges for MFA request.</param>
+            <returns>True is successfully updated account type of the added account.</returns>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.AggregationCategorizationService.UpdateInstitutionLogin(System.Int64,Intuit.Ipp.DataAggregation.Data.InstitutionLogin,Intuit.Ipp.DataAggregation.Data.Challenges@,Intuit.Ipp.DataAggregation.AggregationCategorizationServices.ChallengeSession@)">
+            <summary>
+            Update the account type of an added account.
+            As a result of this call, the user may receive a 201 indicating that accounts have been updated, 
+            or a 401 meaning the user must provide additional authentication data in order to complete the discovery. 
+            In the latter case, a Challenges entity will be present in the response body indicating the information the user must provide to continue. 
+            The user supplies this information in the form of a ChallengeResponses entity that is posted to this same URL ommitting the Credentials from the secondary request.
+            </summary>
+            <param name="institutionLoginId">The login id.</param>
+            <param name="institutionLogin">The institution login.</param>
+            <param name="challenges">The challenges for MFA request.</param>
+            <param name="challengeSession">Challenge Session information required for MFA call.</param>
+            <returns>True if the operation was successful</returns>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.AggregationCategorizationService.UpdateInstitutionLogin(System.Int64,Intuit.Ipp.DataAggregation.Data.InstitutionLogin,System.Boolean,Intuit.Ipp.DataAggregation.Data.Challenges@,Intuit.Ipp.DataAggregation.AggregationCategorizationServices.ChallengeSession@)">
+            <summary>
+            Update the account type of an added account.
+            As a result of this call, the user may receive a 201 indicating that accounts have been updated, 
+            or a 401 meaning the user must provide additional authentication data in order to complete the discovery. 
+            In the latter case, a Challenges entity will be present in the response body indicating the information the user must provide to continue. 
+            The user supplies this information in the form of a ChallengeResponses entity that is posted to this same URL ommitting the Credentials from the secondary request.
+            </summary>
+            <param name="institutionLoginId">The login id.</param>
+            <param name="institutionLogin">The institution login. This value can be null when dealing with non restricted FIs</param>
+            <param name="refresh">Indicator that an explicit refresh is requested</param>
+            <param name="challenges">The challenges for MFA request.</param>
+            <param name="challengeSession">Challenge Session information required for MFA call.</param>
+            <returns>True is successfully updated account type of the added account.</returns>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.AggregationCategorizationService.UpdateInstitutionLoginResponse(Intuit.Ipp.DataAggregation.Data.ChallengeResponses)">
+            <summary>
+            Update the account type of an added account.
+            As a result of this call, the user may receive a 201 indicating that accounts have been updated, 
+            or a 401 meaning the user must provide additional authentication data in order to complete the discovery. 
+            In the latter case, a Challenges entity will be present in the response body indicating the information the user must provide to continue. 
+            The user supplies this information in the form of a ChallengeResponses entity that is posted to this same URL ommitting the Credentials from the secondary request.
+            </summary>
+            <param name="challengeResponses">Challenge responses.</param>
+            <returns>True is successfully updated account type of the added account.</returns>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.AggregationCategorizationService.UpdateInstitutionLoginResponse(Intuit.Ipp.DataAggregation.Data.ChallengeResponses,Intuit.Ipp.DataAggregation.AggregationCategorizationServices.ChallengeSession)">
+            <summary>
+            Update the account type of an added account.
+            As a result of this call, the user may receive a 201 indicating that accounts have been updated, 
+            or a 401 meaning the user must provide additional authentication data in order to complete the discovery. 
+            In the latter case, a Challenges entity will be present in the response body indicating the information the user must provide to continue. 
+            The user supplies this information in the form of a ChallengeResponses entity that is posted to this same URL ommitting the Credentials from the secondary request.
+            </summary>
+            <param name="challengeResponses">Challenge responses.</param>
+            <param name="challengeSession">Challenge Session Information required for MFA call.</param>
+            <returns>True is successfully updated account type of the added account.</returns>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.AggregationCategorizationService.DiscoverAndAddAccounts(System.Int64,Intuit.Ipp.DataAggregation.Data.InstitutionLogin,Intuit.Ipp.DataAggregation.Data.Challenges@)">
+            <summary>
+            This API will discover a user’s accounts at an external FI and add them to the CustomerCentral system. 
+            As a result of this call, the user may receive a 201 indicating that accounts have been discovered, 
+            or a 401 meaning the user must provide additional authentication data in order to complete the discovery. 
+            In the latter case, a Challenges entity will be present in the response body indicating the information the user must provide to continue. 
+            The user supplies this information in the form of a ChallengeResponses entity that is posted to this same URL ommitting the Credentials from the secondary request.
+            </summary>
+            <param name="institutionId">The institution id.</param>
+            <param name="institutionLogin">The institution login.</param>
+            <param name="challenges">Challenges if the request requires MFA.</param>
+            <returns>Account List if it is non mfa request.</returns>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.AggregationCategorizationService.DiscoverAndAddAccountsResponse(Intuit.Ipp.DataAggregation.Data.ChallengeResponses)">
+            <summary>
+            This API will discover a user’s accounts at an external FI and add them to the CustomerCentral system. 
+            As a result of this call, the user may receive a 201 indicating that accounts have been discovered, 
+            or a 401 meaning the user must provide additional authentication data in order to complete the discovery. 
+            In the latter case, a Challenges entity will be present in the response body indicating the information the user must provide to continue. 
+            The user supplies this information in the form of a ChallengeResponses entity that is posted to this same URL ommitting the Credentials from the secondary request.
+            </summary>
+            <param name="challengeResponses">The challenge Responses.</param>
+            <returns>Account List if it is non mfa request.</returns>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.AggregationCategorizationService.DiscoverAndAddAccounts(System.Int64,Intuit.Ipp.DataAggregation.Data.InstitutionLogin,Intuit.Ipp.DataAggregation.Data.Challenges@,Intuit.Ipp.DataAggregation.AggregationCategorizationServices.ChallengeSession@)">
+            <summary>
+            This API will discover a user’s accounts at an external FI and add them to the CustomerCentral system. 
+            As a result of this call, the user may receive a 201 indicating that accounts have been discovered, 
+            or a 401 meaning the user must provide additional authentication data in order to complete the discovery. 
+            In the latter case, a Challenges entity will be present in the response body indicating the information the user must provide to continue. 
+            The user supplies this information in the form of a ChallengeResponses entity that is posted to this same URL ommitting the Credentials from the secondary request.
+            </summary>
+            <param name="institutionId">The institution id.</param>
+            <param name="institutionLogin">The institution login.</param>
+            <param name="challenges">Challenges if the request requires MFA.</param>
+            <param name="challengeSession">Challenge session information required for MFA call.</param>
+            <returns>Account List if it is non mfa request.</returns>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.AggregationCategorizationService.DiscoverAndAddAccountsResponse(Intuit.Ipp.DataAggregation.Data.ChallengeResponses,Intuit.Ipp.DataAggregation.AggregationCategorizationServices.ChallengeSession)">
+            <summary>
+            This API will discover a user’s accounts at an external FI and add them to the CustomerCentral system. 
+            As a result of this call, the user may receive a 201 indicating that accounts have been discovered, 
+            or a 401 meaning the user must provide additional authentication data in order to complete the discovery. 
+            In the latter case, a Challenges entity will be present in the response body indicating the information the user must provide to continue. 
+            The user supplies this information in the form of a ChallengeResponses entity that is posted to this same URL ommitting the Credentials from the secondary request.
+            </summary>
+            <param name="challengeResponses">The challenge Responses.</param>
+            <param name="challengeSession">Challenge session information required for MFA call.</param>
+            <returns>Account List if it is non mfa request.</returns>
+        </member>
+        <member name="M:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.AggregationCategorizationService.ReadResponseStream(System.Net.WebResponse)">
+            <summary>
+            Returns the data stream from the Internet resource
+            </summary>
+            <param name="webResponse">WebResponse from to read</param>
+            <returns>Response stream as string</returns>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.Properties.Resources.CommunicationErrorMessage">
+            <summary>
+              Looks up a localized string similar to There was an error while communicating with the Ids Server..
+            </summary>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.Properties.Resources.EmptyChallengeResponseMsg">
+            <summary>
+              Looks up a localized string similar to Empty challenge response.
+            </summary>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.Properties.Resources.InvalidArgumentMsg">
+            <summary>
+              Looks up a localized string similar to Argument {0} cannot be null or empty.
+            </summary>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.Properties.Resources.InvalidArgumentValueMsg">
+            <summary>
+              Looks up a localized string similar to Invalid value for the argument {0}.
+            </summary>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.Properties.Resources.InvalidSessionInformationMsg">
+            <summary>
+              Looks up a localized string similar to No challenge session information found. The challenge session information is required for making an MFA call..
+            </summary>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.Properties.Resources.NullChallengeResponseHandlerMsg">
+            <summary>
+              Looks up a localized string similar to Routine for handling challenges from FI not found.
+            </summary>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.Properties.Resources.ResponseStreamNullOrEmptyMessage">
+            <summary>
+              Looks up a localized string similar to The Response Stream was null or empty..
+            </summary>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.Properties.Resources.UpdateLoginORAccountAggregationFailureMsg">
+            <summary>
+              Looks up a localized string similar to An error occurred. Either failed to create/update an Institution Login OR accounts could not be found.
+            </summary>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.Properties.Resources.ValueLessThanZeroMsg">
+            <summary>
+              Looks up a localized string similar to Argument {0} cannot be less that zero. It should be a positive value..
+            </summary>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.AggregationCategorizationServicesConstants">
+            <summary>
+            AggregationCategorizationServices Constants.
+            </summary>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.AggregationCategorizationServicesConstants.ChallengeSessionId">
+            <summary>
+            Challenge Session Id.
+            </summary>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.AggregationCategorizationServices.AggregationCategorizationServicesConstants.ChallengeNodeId">
+            <summary>
+            Challenge Node Id.
+            </summary>
+        </member>
+    </members>
+</doc>

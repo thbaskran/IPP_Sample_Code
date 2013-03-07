@@ -1,0 +1,2515 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Intuit.Ipp.DataAggregation.Data</name>
+    </assembly>
+    <members>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.IEntity">
+            <summary>
+            Interface for IDS entities.
+            </summary>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.AccountList">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.AccountList.AnyIntuitObjects">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.BankingAccount">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.Account">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Account.accountId">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Account.status">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Account.accountNumber">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Account.accountNumberReal">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Account.accountNickname">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Account.displayPosition">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Account.displayPositionSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Account.institutionId">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Account.description">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Account.registeredUserName">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Account.balanceAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Account.balanceAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Account.balanceDate">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Account.balanceDateSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Account.balancePreviousAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Account.balancePreviousAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Account.lastTxnDate">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Account.lastTxnDateSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Account.aggrSuccessDate">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Account.aggrSuccessDateSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Account.aggrAttemptDate">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Account.aggrAttemptDateSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Account.aggrStatusCode">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Account.currencyCode">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Account.currencyCodeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Account.bankId">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Account.institutionLoginId">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.BankingAccount.bankingAccountType">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.BankingAccount.bankingAccountTypeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.BankingAccount.postedDate">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.BankingAccount.postedDateSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.BankingAccount.availableBalanceAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.BankingAccount.availableBalanceAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.BankingAccount.interestType">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.BankingAccount.originationDate">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.BankingAccount.originationDateSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.BankingAccount.openDate">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.BankingAccount.openDateSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.BankingAccount.periodInterestRate">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.BankingAccount.periodInterestRateSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.BankingAccount.periodDepositAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.BankingAccount.periodDepositAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.BankingAccount.periodInterestAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.BankingAccount.periodInterestAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.BankingAccount.interestAmountYtd">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.BankingAccount.interestAmountYtdSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.BankingAccount.interestPriorAmountYtd">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.BankingAccount.interestPriorAmountYtdSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.BankingAccount.maturityDate">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.BankingAccount.maturityDateSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.BankingAccount.maturityAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.BankingAccount.maturityAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.BankingAccountType">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.BankingAccountType.CHECKING">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.BankingAccountType.SAVINGS">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.BankingAccountType.MONEYMRKT">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.BankingAccountType.RECURRINGDEPOSIT">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.BankingAccountType.CD">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.BankingAccountType.CASHMANAGEMENT">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.BankingAccountType.OVERDRAFT">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.CurrencyCode">
+            <remarks/>
+            <summary>
+            ISO 4217 Currency Code enumeration
+            </summary>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.AED">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.AFA">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.ALL">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.ANG">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.AOA">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.AOK">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.ARP">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.ARS">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.AMD">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.ATS">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.AUD">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.AWF">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.AWG">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.AZM">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.BAM">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.BBD">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.BDT">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.BEF">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.BGL">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.BHD">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.BIF">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.BMD">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.BND">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.BOB">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.BRC">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.BRL">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.BSD">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.BTN">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.BUK">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.BWP">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.BYR">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.BYB">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.BZD">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.CAD">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.CDF">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.CHF">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.CLP">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.CNY">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.COP">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.CRC">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.CZK">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.CUP">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.CVE">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.DDM">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.DEM">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.DJF">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.DKK">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.DOP">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.DZD">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.ECS">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.EEK">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.EGP">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.ERN">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.ESP">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.ETB">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.EUR">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.FIM">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.FJD">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.FKP">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.FRF">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.GBP">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.GEL">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.GHC">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.GIP">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.GMD">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.GNF">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.GRD">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.GTQ">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.GWP">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.GYD">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.HKD">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.HNL">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.HRK">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.HTG">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.HUF">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.IDR">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.IEP">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.ILS">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.INR">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.IQD">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.IRR">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.ISK">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.ITL">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.JMD">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.JOD">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.KES">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.KGS">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.KHR">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.KMF">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.KPW">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.KRW">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.KWD">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.KYD">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.KZT">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.LAK">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.LBP">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.LKR">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.LRD">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.LSL">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.LTL">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.LUF">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.LVL">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.LYD">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.MAD">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.MDL">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.MGF">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.MKD">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.MMK">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.MNT">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.MOP">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.MRO">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.MUR">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.MVR">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.MWK">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.MXN">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.MXP">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.MYR">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.MZM">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.NAD">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.NGN">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.NIC">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.NIO">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.NLG">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.NOK">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.NPR">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.NZD">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.OMR">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.PAB">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.PEN">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.PES">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.PGK">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.PHP">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.PKR">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.PLN">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.PLZ">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.PTE">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.PYG">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.QAR">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.ROL">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.RUR">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.RWF">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.SAR">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.SBD">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.SCR">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.SDD">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.SDP">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.SEK">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.SGD">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.SHP">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.SIT">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.SKK">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.SLL">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.SM">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.SOS">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.SRG">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.STD">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.SUR">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.SVC">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.SYP">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.SZL">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.THB">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.TMM">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.TND">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.TOP">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.TRL">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.TTD">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.TWD">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.TZS">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.UAH">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.UGS">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.UGX">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.USD">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.UYP">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.UYU">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.UZS">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.VND">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.VUV">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.VAL">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.WST">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.XAF">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.XCD">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.XOF">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.XPF">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.YER">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.YUD">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.ZAR">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.ZMK">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.ZRZ">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CurrencyCode.ZWD">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.Credentials">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Credentials.credential">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.Credential">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Credential.name">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Credential.value">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.ChallengeResponses">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.ChallengeResponses.response">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.CreditAccount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.creditAccountType">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.creditAccountTypeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.detailedDescription">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.interestRate">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.interestRateSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.creditAvailableAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.creditAvailableAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.creditMaxAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.creditMaxAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.cashAdvanceAvailableAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.cashAdvanceAvailableAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.cashAdvanceMaxAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.cashAdvanceMaxAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.cashAdvanceBalance">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.cashAdvanceBalanceSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.cashAdvanceInterestRate">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.cashAdvanceInterestRateSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.currentBalance">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.currentBalanceSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.paymentMinAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.paymentMinAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.paymentDueDate">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.paymentDueDateSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.previousBalance">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.previousBalanceSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.statementEndDate">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.statementEndDateSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.statementPurchaseAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.statementPurchaseAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.statementFinanceAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.statementFinanceAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.pastDueAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.pastDueAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.lastPaymentAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.lastPaymentAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.lastPaymentDate">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.lastPaymentDateSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.statementCloseBalance">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.statementCloseBalanceSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.statementLateFeeAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.CreditAccount.statementLateFeeAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.CreditAccountType">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CreditAccountType.CREDITCARD">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CreditAccountType.LINEOFCREDIT">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.CreditAccountType.OTHER">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.InvestmentAccount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.investmentAccountType">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.investmentAccountTypeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.interestMarginBalance">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.interestMarginBalanceSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.shortBalance">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.shortBalanceSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.availableCashBalance">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.availableCashBalanceSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.currentBalance">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.currentBalanceSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.maturityValueAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.maturityValueAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.unvestedBalance">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.unvestedBalanceSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.vestedBalance">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.vestedBalanceSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.empMatchDeferAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.empMatchDeferAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.empMatchDeferAmountYtd">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.empMatchDeferAmountYtdSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.empMatchAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.empMatchAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.empMatchAmountYtd">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.empMatchAmountYtdSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.empPretaxContribAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.empPretaxContribAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.empPretaxContribAmountYtd">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.empPretaxContribAmountYtdSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.rolloverAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.rolloverAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.contribTotalYtd">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.contribTotalYtdSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.empMatchDeferAmountItd">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.empMatchDeferAmountItdSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.empMatchAmountItd">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.empMatchAmountItdSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.rolloverItd">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.rolloverItdSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.cashBalanceAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.cashBalanceAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.initialLoanBalance">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.initialLoanBalanceSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.loanStartDate">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.loanStartDateSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.currentLoanBalance">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.currentLoanBalanceSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.loanRate">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentAccount.loanRateSpecified">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.InvestmentAccountType">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.InvestmentAccountType.TAXABLE">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.InvestmentAccountType.Item401K">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.InvestmentAccountType.BROKERAGE">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.InvestmentAccountType.IRA">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.InvestmentAccountType.Item403B">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.InvestmentAccountType.KEOGH">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.InvestmentAccountType.TRUST">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.InvestmentAccountType.TDA">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.InvestmentAccountType.SIMPLE">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.InvestmentAccountType.NORMAL">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.InvestmentAccountType.SARSEP">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.InvestmentAccountType.UGMA">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.InvestmentAccountType.OTHER">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.LoanAccount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.loanDescription">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.loanType">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.loanTypeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.postedDate">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.postedDateSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.term">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.holderName">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.lateFeeAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.lateFeeAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.payoffAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.payoffAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.payoffAmountDate">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.payoffAmountDateSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.referenceNumber">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.originalMaturityDate">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.originalMaturityDateSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.taxPayeeName">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.principalBalance">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.principalBalanceSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.escrowBalance">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.escrowBalanceSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.interestRate">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.interestRateSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.interestPeriod">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.initialAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.initialAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.initialDate">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.initialDateSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.nextPaymentPrincipalAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.nextPaymentPrincipalAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.nextPaymentInterestAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.nextPaymentInterestAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.nextPayment">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.nextPaymentSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.nextPaymentDate">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.nextPaymentDateSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.lastPaymentDueDate">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.lastPaymentDueDateSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.lastPaymentReceiveDate">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.lastPaymentReceiveDateSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.lastPaymentAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.lastPaymentAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.lastPaymentPrincipalAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.lastPaymentPrincipalAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.lastPaymentInterestAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.lastPaymentInterestAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.lastPaymentEscrowAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.lastPaymentEscrowAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.lastPaymentLastFeeAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.lastPaymentLastFeeAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.lastPaymentLateCharge">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.lastPaymentLateChargeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.principalPaidYtd">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.principalPaidYtdSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.interestPaidYtd">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.interestPaidYtdSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.insurancePaidYtd">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.insurancePaidYtdSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.taxPaidYtd">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.taxPaidYtdSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.autopayEnrolled">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.autopayEnrolledSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.collateral">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.currentSchool">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.firstPaymentDate">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.firstPaymentDateSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.guarantor">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.firstMortgage">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.firstMortgageSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.loanPaymentFreq">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.paymentMinAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.paymentMinAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.originalSchool">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.recurringPaymentAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.recurringPaymentAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.lender">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.endingBalanceAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.endingBalanceAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.availableBalanceAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.availableBalanceAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.loanTermType">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.loanTermTypeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.noOfPayments">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.noOfPaymentsSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.balloonAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.balloonAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.projectedInterest">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.projectedInterestSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.interestPaidLtd">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.interestPaidLtdSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.interestRateType">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.interestRateTypeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.loanPaymentType">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.loanPaymentTypeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.remainingPayments">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanAccount.remainingPaymentsSpecified">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.LoanType">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.LoanType.LOAN">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.LoanType.AUTO">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.LoanType.COMMERCIAL">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.LoanType.CONSTR">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.LoanType.CONSUMER">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.LoanType.HOMEEQUITY">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.LoanType.MILITARY">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.LoanType.MORTGAGE">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.LoanType.SMB">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.LoanType.STUDENT">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.LoanTermType">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.LoanTermType.COMBO">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.LoanTermType.FIXED">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.LoanTermType.REVOLVE">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.LoanTermType.OPEN">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.RateType">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.RateType.FIXED">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.RateType.FLOATING">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.RateType.ARM">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.PaymentType">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.PaymentType.INT_ONLY">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.PaymentType.PRN_AND_INT">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.PaymentType.PRN_PLUS_INT">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.OtherAccount">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.RewardsAccount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.RewardsAccount.postedDate">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.RewardsAccount.postedDateSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.RewardsAccount.programType">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.RewardsAccount.originalBalance">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.RewardsAccount.originalBalanceSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.RewardsAccount.currentBalance">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.RewardsAccount.currentBalanceSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.RewardsAccount.rewardQualifyAmountYtd">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.RewardsAccount.rewardQualifyAmountYtdSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.RewardsAccount.rewardLifetimeEarned">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.RewardsAccount.rewardLifetimeEarnedSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.RewardsAccount.segmentYtd">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.RewardsAccount.segmentYtdSpecified">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.BankingTransaction">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.Transaction">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Transaction.id">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Transaction.currencyType">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Transaction.currencyTypeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Transaction.institutionTransactionId">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Transaction.correctInstitutionTransactionId">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Transaction.correctAction">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Transaction.correctActionSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Transaction.serverTransactionId">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Transaction.checkNumber">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Transaction.refNumber">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Transaction.confirmationNumber">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Transaction.payeeId">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Transaction.payeeName">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Transaction.extendedPayeeName">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Transaction.normalizedPayeeName">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Transaction.memo">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Transaction.category">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Transaction.type">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Transaction.valueType">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Transaction.categoryName">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Transaction.ofxCategoryName">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Transaction.currencyRate">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Transaction.currencyRateSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Transaction.originalCurrency">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Transaction.originalCurrencySpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Transaction.postedDate">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Transaction.userDate">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Transaction.userDateSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Transaction.availableDate">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Transaction.availableDateSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Transaction.amount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Transaction.amountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Transaction.runningBalanceAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Transaction.runningBalanceAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Transaction.sic">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Transaction.sicSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Transaction.pending">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.TransactionCorrectedType">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.TransactionCorrectedType.REPLACE">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.TransactionCorrectedType.DELETE">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.Challenges">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Challenges.challenge">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.ChallengesChallenge">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.ChallengesChallenge.AnyIntuitObjects">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.ChallengesChallenge.choice">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.ChallengesChallengeChoice">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.ChallengesChallengeChoice.text">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.ChallengesChallengeChoice.val">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.AddressType">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.AddressType.HOME">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.AddressType.BUSINESS">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.AddressType.MAILING">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.Address">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Address.type">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Address.typeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Address.address1">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Address.address2">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Address.address3">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Address.city">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Address.state">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Address.postalCode">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Address.country">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.ErrorInfo">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.ErrorInfo.errorType">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.ErrorInfo.errorTypeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.ErrorInfo.errorCode">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.ErrorInfo.errorMessage">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.ErrorInfo.correlationId">
+            <remarks/>
+            <summary>
+            This is a aggregation-specific addition to the XSD. This is necessary to determine
+            the appropriate node/log file to examine when troubleshooting the error
+            </summary>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.ErrorInfo.exceptionDetail">
+            <remarks/>
+            <summary>
+            This is a aggregation-specific addition to the XSD. This allows us to return a stack trace for easy debugging in non-production environments
+            
+            </summary>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.ErrorType">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.ErrorType.SYSTEM_ERROR">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.ErrorType.APP_ERROR">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.ErrorType.USER_ERROR">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.ErrorType.WARNING">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.accountTypeEnumeration">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.accountTypeEnumeration.checking">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.accountTypeEnumeration.savings">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.accountTypeEnumeration.cd">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.accountTypeEnumeration.moneymarket">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.accountTypeEnumeration.recurringdeposit">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.accountTypeEnumeration.cashmanagement">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.accountTypeEnumeration.overdraft">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.accountTypeEnumeration.creditcard">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.accountTypeEnumeration.lineofcredit">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.accountTypeEnumeration.taxableinvestment">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.accountTypeEnumeration.taxdeferredinvestment">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.accountTypeEnumeration.mortgage">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.accountTypeEnumeration.loan">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.accountTypeEnumeration.annuity">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.accountTypeEnumeration.wholelife">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.accountTypeEnumeration.rewards">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.accountTypeEnumeration.email">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.accountTypeEnumeration.biller">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.accountTypeEnumeration.terminsurance">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.accountTypeEnumeration.asset">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.accountTypeEnumeration.liability">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.accountTypeEnumeration.other">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.Status">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Status.statusMessage">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Status.errorInfo">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.CreditCardTransaction">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.InstitutionLogin">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InstitutionLogin.AnyIntuitObject">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.Institution">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Institution.institutionId">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Institution.institutionName">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Institution.homeUrl">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Institution.phoneNumber">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Institution.virtual">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Institution.virtualSpecified">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.Institutions">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.Institutions.institution">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.InstitutionDetail">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InstitutionDetail.status">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InstitutionDetail.address">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InstitutionDetail.emailAddress">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InstitutionDetail.specialText">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InstitutionDetail.currencyCode">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InstitutionDetail.currencyCodeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InstitutionDetail.keys">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.InstitutionDetailKey">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InstitutionDetailKey.name">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InstitutionDetailKey.val">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InstitutionDetailKey.status">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InstitutionDetailKey.valueLengthMin">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InstitutionDetailKey.valueLengthMinSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InstitutionDetailKey.valueLengthMax">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InstitutionDetailKey.valueLengthMaxSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InstitutionDetailKey.displayFlag">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InstitutionDetailKey.displayOrder">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InstitutionDetailKey.mask">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InstitutionDetailKey.instructions">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InstitutionDetailKey.description">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.InvestmentBankingTransaction">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentBankingTransaction.bankingTransactionType">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentBankingTransaction.subaccountFundType">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentBankingTransaction.subaccountFundTypeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentBankingTransaction.banking401KSourceType">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentBankingTransaction.banking401KSourceTypeSpecified">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.InvestmentSubAccountType">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.InvestmentSubAccountType.CASH">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.InvestmentSubAccountType.MARGIN">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.InvestmentSubAccountType.SHORT">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.InvestmentSubAccountType.OTHER">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.Banking401KSourceType">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.Banking401KSourceType.PRETAX">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.Banking401KSourceType.AFTERTAX">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.Banking401KSourceType.MATCH">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.Banking401KSourceType.PROFITSHARING">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.Banking401KSourceType.ROLLOVER">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.Banking401KSourceType.OTHERVEST">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.Banking401KSourceType.OTHERNONVEST">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.reversalInstitutionTransactionId">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.description">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.buyType">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.buyTypeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.incomeType">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.incomeTypeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.inv401kSource">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.loanId">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.optionsActionType">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.optionsActionTypeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.optionsBuyType">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.optionsBuyTypeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.optionsSellType">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.optionsSellTypeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.positionType">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.positionTypeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.relatedInstitutionTradeId">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.relatedOptionTransType">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.relatedOptionTransTypeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.securedType">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.securedTypeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.sellReason">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.sellReasonSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.sellType">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.sellTypeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.subaccountFromType">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.subaccountFromTypeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.subaccountFundType">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.subaccountFundTypeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.subaccountSecurityType">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.subaccountSecurityTypeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.subaccountToType">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.subaccountToTypeSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.transferAction">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.transferActionSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.unitType">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.cusip">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.symbol">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.unitAction">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.optionsSecurity">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.tradeDate">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.tradeDateSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.settleDate">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.settleDateSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.accruedInterestAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.accruedInterestAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.averageCostBasisAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.averageCostBasisAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.commissionAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.commissionAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.denominator">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.denominatorSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.payrollDate">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.payrollDateSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.purchaseDate">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.purchaseDateSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.gainAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.gainAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.feesAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.feesAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.fractionalUnitsCashAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.fractionalUnitsCashAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.loadAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.loadAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.loanInterestAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.loanInterestAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.loanPrincipalAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.loanPrincipalAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.markdownAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.markdownAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.markupAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.markupAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.newUnits">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.newUnitsSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.numerator">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.numeratorSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.oldUnits">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.oldUnitsSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.penaltyAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.penaltyAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.priorYearContribution">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.priorYearContributionSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.sharesPerContract">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.sharesPerContractSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.stateWithholding">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.stateWithholdingSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.totalAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.totalAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.taxesAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.taxesAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.taxExempt">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.taxExemptSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.unitPrice">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.unitPriceSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.units">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.unitsSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.withholdingAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.withholdingAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.optionsSharesPerContract">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.InvestmentTransaction.optionsSharesPerContractSpecified">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.BuyType">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.BuyType.BUY">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.BuyType.BUYTOCOVER">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.IncomeType">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.IncomeType.CGLONG">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.IncomeType.CGSHORT">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.IncomeType.DIV">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.IncomeType.INTEREST">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.IncomeType.MISC">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.OptionsActionType">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.OptionsActionType.EXERCISE">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.OptionsActionType.ASSIGN">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.OptionsActionType.EXPIRE">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.OptionsBuyType">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.OptionsBuyType.BUYTOOPEN">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.OptionsBuyType.BUYTOCLOSE">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.OptionsSellType">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.OptionsSellType.SELLTOOPEN">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.OptionsSellType.SELLTOCLOSE">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.PositionType">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.PositionType.LONG">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.PositionType.SHORT">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.RelatedOptionTransType">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.RelatedOptionTransType.SPREAD">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.RelatedOptionTransType.STRADDLE">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.RelatedOptionTransType.NONE">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.RelatedOptionTransType.OTHER">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.SecuredType">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.SecuredType.NAKED">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.SecuredType.COVERED">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.SellReason">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.SellReason.CALL">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.SellReason.SELL">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.SellReason.MATURITY">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.SellType">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.SellType.SELL">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.SellType.SELLSHORT">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.TransferAction">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.TransferAction.IN">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.TransferAction.OUT">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.LoanTransaction">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanTransaction.principalAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanTransaction.principalAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanTransaction.interestAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanTransaction.interestAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanTransaction.escrowTotalAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanTransaction.escrowTotalAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanTransaction.escrowTaxAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanTransaction.escrowTaxAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanTransaction.escrowInsuranceAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanTransaction.escrowInsuranceAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanTransaction.escrowPmiAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanTransaction.escrowPmiAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanTransaction.escrowFeesAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanTransaction.escrowFeesAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanTransaction.escrowOtherAmount">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.LoanTransaction.escrowOtherAmountSpecified">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.RewardsTransaction">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.TransactionList">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.TransactionList.AnyIntuitObjects">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.TransactionList.notRefreshedReason">
+            <remarks/>
+        </member>
+        <member name="P:Intuit.Ipp.DataAggregation.Data.TransactionList.notRefreshedReasonSpecified">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.NotRefreshedReason">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.NotRefreshedReason.NOT_NECESSARY">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.NotRefreshedReason.CREDENTIALS_REQUIRED">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.NotRefreshedReason.CHALLENGE_RESPONSE_REQUIRED">
+            <remarks/>
+        </member>
+        <member name="F:Intuit.Ipp.DataAggregation.Data.NotRefreshedReason.UNAVAILABLE">
+            <remarks/>
+        </member>
+        <member name="T:Intuit.Ipp.DataAggregation.Data.NamespaceDoc">
+            <summary>
+            Intuit.Ipp.DataAggregation.Data assembly has POCO (Plain Old C# Object) classes that are generated from 
+            .xsd schema files using XsdGeneration.exe tool.  
+            It has Aggregation and Categorization Service entity classes.
+            </summary>
+        </member>
+    </members>
+</doc>
