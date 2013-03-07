@@ -1,0 +1,25 @@
+﻿@model AggCatDotNetMvc4SampleApp.Mvc4.Models.ErrorModel
+@{
+    ViewBag.Title = "Delete Customer";
+}
+<h2>
+    Delete Customer</h2>
+@if (Model != null)
+{
+    if (Model.Success)
+    {
+    <p>
+        The customer was successfully deleted.</p>
+    }
+    else
+    {
+    @Html.Raw(Model.Error)
+    }
+}
+else
+{
+    using (Html.BeginForm())
+    {
+        <input type="submit" value="Delete" class="defaultBtn" />
+    }
+}

@@ -1,0 +1,85 @@
+﻿@model AggCatDotNetMvc4SampleApp.Mvc4.Models.InstitutionModel
+@{
+    ViewBag.Title = "Institutions";
+}
+<div>
+    @using (Html.BeginForm())
+    {
+        <span>Available Institutions:</span> @Html.DropDownListFor(item => item.InstitutionId, new SelectList(Model.Institutions, "institutionId", "institutionName", Model.InstitutionId).OrderBy(x => x.Text))
+        <input type="submit" value="Institution Details" class="defaultBtn" />
+        if (Model.InstitutionDetail != null)
+        {
+        <div style="text-align: center; margin-top: 20px;">
+            <span class="details">Institution Details:</span>
+            <div class="wrapper" style="height: 250px;">
+                <table class="reportsTable" width="95%" cellspacing="5px" cellpadding="5px">
+                    <tbody>
+                        <tr>
+                            <td>
+                                Institution Id:
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => modelItem.InstitutionDetail.institutionId)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Institution Name:
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => modelItem.InstitutionDetail.institutionName)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Home Url:
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => modelItem.InstitutionDetail.homeUrl)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Address:
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => modelItem.InstitutionDetail.address.address1) @Html.DisplayFor(modelItem => modelItem.InstitutionDetail.address.address2)
+                                @Html.DisplayFor(modelItem => modelItem.InstitutionDetail.address.address3) @Html.DisplayFor(modelItem => modelItem.InstitutionDetail.address.city)
+                                @Html.DisplayFor(modelItem => modelItem.InstitutionDetail.address.state) @Html.DisplayFor(modelItem => modelItem.InstitutionDetail.address.country)
+                                @Html.DisplayFor(modelItem => modelItem.InstitutionDetail.address.postalCode)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Phone Number:
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => modelItem.InstitutionDetail.phoneNumber)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Email Address:
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => modelItem.InstitutionDetail.emailAddress)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Currency Code:
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => modelItem.InstitutionDetail.currencyCode)
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="deleteDiv">
+            @Html.ActionLink("Discover And Add", "DiscoverAndAddLogin", new { id = Model.InstitutionDetail.institutionId })
+        </div>
+        }
+    }
+</div>

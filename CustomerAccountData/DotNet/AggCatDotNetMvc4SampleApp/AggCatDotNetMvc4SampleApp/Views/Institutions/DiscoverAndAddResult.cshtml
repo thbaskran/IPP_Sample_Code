@@ -1,0 +1,63 @@
+﻿@model AggCatDotNetMvc4SampleApp.Mvc4.Models.DiscoverAddModel
+@{
+    ViewBag.Title = "Discover And Add Accounts";
+}
+<h2>
+    Discover And Add Accounts</h2>
+@if (Model != null && Model.AccountList != null && Model.AccountList.AnyIntuitObjects != null)
+{
+    <div class="wrapper" style="height: 250px;">
+        <table class="reportsTable" width="95%" cellspacing="5px" cellpadding="5px">
+            <thead>
+                <tr>
+                    <td>
+                        Account Id:
+                    </td>
+                    <td>
+                        Account Nick Name:
+                    </td>
+                    <td>
+                        Account Number:
+                    </td>
+                    <td>
+                        Balance:
+                    </td>
+                    <td>
+                        Status:
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Intuit.Ipp.DataAggregation.Data.Account item in Model.AccountList.AnyIntuitObjects)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.accountId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.accountNickname)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.accountNumber)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.balanceAmount)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.status)
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <p>
+        There was some error while executing the API Discover And Add. Either the credentials
+        or the challenge response was incorrect.</p>
+    <p>
+        Click @Html.ActionLink("here", "/Index") to go to Institution page
+        and try again.</p>
+}

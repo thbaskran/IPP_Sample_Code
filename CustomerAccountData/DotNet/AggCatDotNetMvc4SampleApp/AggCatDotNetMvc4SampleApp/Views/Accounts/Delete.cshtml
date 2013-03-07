@@ -1,0 +1,17 @@
+﻿@model AggCatDotNetMvc4SampleApp.Mvc4.Models.ErrorModel
+@{
+    ViewBag.Title = "Delete";
+}
+<h2>
+    Delete Account</h2>
+@if (Model.Success)
+{
+    <p>
+        The account was successfully deleted.</p>
+    <p>
+        Click @Html.ActionLink("here", "Index") to go to customer accounts list.</p>
+}
+else
+{
+    @Html.Raw(Model.Error)
+}

@@ -1,0 +1,47 @@
+﻿@model AggCatDotNetMvc4SampleApp.Mvc4.Models.DiscoverAddModel
+@{
+    ViewBag.Title = "DiscoverAndAddChallenge";
+}
+@using (Html.BeginForm())
+{
+    if (Model != null && Model.Challenges != null)
+    {
+    <span>Additional credential validation is required. Please fill the below fields:</span>
+    <div class="wrapper" style="height: 100px;">
+        @if (Model.Challenges.challenge[0].AnyIntuitObjects.Count() == 2)
+        {
+            <table class="reportsTable" width="95%" cellspacing="5px" cellpadding="5px">
+                <tbody>
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => modelItem.Challenges.challenge[0].AnyIntuitObjects[0])
+                        </td>
+                        <td>
+                            <img src="@Url.Action("GetImageStream", "Institutions")" alt="challenge image" />
+                        </td>
+                        <td>
+                            Use Same: @Html.EditorFor(modelItem => modelItem.UseSame)
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <table class="reportsTable" width="95%" cellspacing="5px" cellpadding="5px">
+                <tbody>
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => modelItem.Challenges.challenge[0].AnyIntuitObjects[0])
+                        </td>
+                        <td>
+                            @Html.EditorFor(modelItem => modelItem.Answer)
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        }
+    </div>
+    <input type="submit" value="Submit" class="defaultBtn" />
+    }
+}

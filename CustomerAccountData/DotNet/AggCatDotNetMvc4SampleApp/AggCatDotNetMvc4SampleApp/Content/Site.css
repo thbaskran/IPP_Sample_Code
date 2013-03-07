@@ -1,0 +1,316 @@
+body
+{
+    font-size: .85em;
+    font-family: "Segoe UI" , Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+    background: url("../Images/back.png");
+    background-repeat: repeat;
+}
+
+header, footer, nav, section
+{
+    display: block;
+}
+
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+fieldset
+{
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend
+{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea
+{
+    min-height: 75px;
+}
+
+.editor-label
+{
+    margin: 1em 0 0 0;
+}
+
+.editor-field
+{
+    margin: 0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error
+{
+    color: #f00;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
+
+/*
+Custom styles
+*/
+.wrapper
+{
+    max-width: 100%;
+    height: 700px;
+    overflow: auto;
+    margin-top: 20px;
+}
+
+.reportsTable
+{
+    font-family: "Lucida Sans Unicode" , "Lucida Grande" , Sans-Serif;
+    font-size: 12px;
+    text-align: left;
+    border-collapse: collapse;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.reportsTable thead tr td
+{
+    font-weight: normal;
+    font-size: 13px;
+    color: #039;
+    background: #B9C9FE;
+    padding: 8px;
+}
+
+.reportsTable tbody tr td
+{
+    background: #E8EDFF;
+    border-top: 1px solid white;
+    color: #669;
+    padding: 8px;
+}
+
+.reportsTable tbody tr:hover td
+{
+    background: #D0DAFD;
+}
+
+header
+{
+    height: 150px;
+    background: url("../Images/header.png");
+}
+
+#main, footer
+{
+    margin: 0 Auto;
+    width: 968px;
+}
+
+#main
+{
+    min-height: 500px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-color: White;
+}
+
+footer
+{
+    height: 50px;
+    background: url("../Images/mainbody.png");
+}
+
+#aditiLogo
+{
+    background: url("https://aditicorpimages.blob.core.windows.net/homepage/logo.png") no-repeat;
+    height: 23px;
+    width: 153px;
+    margin-left: 40%;
+}
+
+#aggCatLogo a
+{
+    left: 24%;
+    float: left;
+    position: absolute;
+    top: 4%;
+    background: url("../Images/aggcat.png");
+    height: 50px;
+    width: 700px;
+}
+
+#intuitLogo a
+{
+    background: url("https://www.intuit.com/sbweb/common/images/sprites/global.png?version=003");
+    height: 48px;
+    width: 135px;
+    background-repeat: no-repeat;
+    background-position: -1010px -80px;
+    margin: 45px 0 0 20px;
+    float: left;
+}
+
+#linksNav
+{
+    float: right;
+    text-align: right;
+    margin-right: 1%;
+}
+
+#linksNav ul
+{
+    list-style: none;
+}
+
+#linksNav ul li
+{
+    list-style: none;
+}
+
+#mainNav
+{
+    text-align: center;
+    float: left;
+    margin-top: 7.6%;
+    margin-left: 13%;
+}
+
+#mainNav ul
+{
+    list-style: none;
+}
+
+#mainNav ul li
+{
+    display: inline;
+    list-style: none;
+}
+
+#mainNav ul li a, #mainNav ul li a:hover, #mainNav ul li a:visited, #mainNav ul li a:active
+{
+    font-size: 17px;
+    color: darkBlue;
+    text-decoration: none;
+    border-right: 3px solid black;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: lightCoral;
+    margin-right: 20px;
+}
+
+.defaultBtn, #deleteDiv a, #deleteDiv a:active, #deleteDiv a:hover, #deleteDiv a:visited
+{
+    background: url("../Images/login-hdr-tile.png") repeat-x 0px -3px;
+    font-family: Verdana,Arial,sans-serif;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: auto;
+    margin: 0 10px;
+}
+
+select
+{
+    width: 500px;
+}
+
+#mydiv
+{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.details
+{
+    color: purple;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.title
+{
+    color: #174B8B;
+    font-size: 24px;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0 0 2px 0;
+    font-weight: bold;
+    font-family: Trebuchet MS;
+}
+
+ul#social li
+{
+    display: inline;
+    list-style: none;
+}
+
+ul#social li a
+{
+    color: #999;
+    text-decoration: none;
+}
+
+a.facebook, a.twitter
+{
+    display: block;
+    float: left;
+    height: 24px;
+    padding-left: 17px;
+    text-indent: -9999px;
+    width: 16px;
+}
+
+a.facebook
+{
+    background: url("../Images/facebook.png") no-repeat;
+}
+
+a.twitter
+{
+    background: url("../Images/twitter.png") no-repeat;
+}
+
+.float-left
+{
+    float: left;
+}
+
+.float-right
+{
+    float: right;
+}
+
+#deleteDiv
+{
+    text-align: right;
+    margin-top: 25px;
+}
+
+#deleteDiv a, #deleteDiv a:active, #deleteDiv a:hover, #deleteDiv a:visited
+{
+    text-decoration: none;
+}

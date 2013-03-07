@@ -1,0 +1,110 @@
+﻿@model AggCatDotNetMvc4SampleApp.Mvc4.Models.AccountModel
+@{
+    ViewBag.Title = "Customer Accounts";
+    ViewData["Accounts"] = Model.Accounts;
+}
+<script type="text/javascript">
+
+    function GetAccountDetails(type) {
+        var str = "";
+        $("select option:selected").each(function () {
+            str += $(this).text() + " ";
+        });
+
+        var url = "/Accounts/AccInfo/" + str;
+        $.get(url, function (data) {
+            $('#mydiv').empty().append(data);
+        });
+
+        if (type == "changed") {
+            $('.wrapper').remove();
+        }
+    }
+
+    $(document).ready(function () {
+        GetAccountDetails("load");
+        $('#AccountId').change(function () {
+            GetAccountDetails("changed");
+        });
+    });
+</script>
+<div>
+    @using (Html.BeginForm())
+    {
+        if (Model != null && Model.Accounts != null && Model.Accounts.Count > 0)
+        {
+            <span>Available Customer Accounts:</span> @Html.DropDownListFor(item => item.AccountId, new SelectList(Model.Accounts, "accountId", "accountNumber", Model.AccountId))
+            <input type="submit" value="Transactions" class="defaultBtn" />
+            <div id="mydiv">
+            </div>   
+        }
+        else
+        {
+        <p>
+            Could not find any accounts for the specified customer. Please use Discover and
+            Add Accounts to add accounts.</p>
+        }
+    }
+</div>
+@if (Model.Transactions != null)
+{
+    <div style="text-align: center; margin-top: 30px;">
+        <span class="details">Transactions for the selected account: </span>
+        <div class="wrapper">
+            <table class="reportsTable" width="95%" cellspacing="5px" cellpadding="5px">
+                <thead>
+                    <tr>
+                        <td>
+                            Id
+                        </td>
+                        <td>
+                            Institution TransactionId
+                        </td>
+                        <td>
+                            Payee Name
+                        </td>
+                        <td>
+                            Posted Date
+                        </td>
+                        <td>
+                            User Date
+                        </td>
+                        <td>
+                            Amount
+                        </td>
+                        <td>
+                            Pending
+                        </td>
+                        <td>
+                            Currency Type
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Transactions)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.id)
+                            </td>
+                            <td>@Html.DisplayFor(modelItem => item.institutionTransactionId)
+                            </td>
+                            <td>@Html.DisplayFor(modelItem => item.payeeName)
+                            </td>
+                            <td>@Html.DisplayFor(modelItem => item.postedDate)
+                            </td>
+                            <td>@Html.DisplayFor(modelItem => item.userDate)
+                            </td>
+                            <td>@Html.DisplayFor(modelItem => item.amount)
+                            </td>
+                            <td>@Html.DisplayFor(modelItem => item.pending)
+                            </td>
+                            <td>@Html.DisplayFor(modelItem => item.currencyType)
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+}

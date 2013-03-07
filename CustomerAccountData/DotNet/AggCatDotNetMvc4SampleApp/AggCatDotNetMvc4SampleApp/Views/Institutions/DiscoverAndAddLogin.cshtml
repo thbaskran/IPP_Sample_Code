@@ -1,0 +1,36 @@
+﻿@model AggCatDotNetMvc4SampleApp.Mvc4.Models.InstitutionModel
+@{
+    ViewBag.Title = "DiscoverAndAddLogin";
+}
+@using (Html.BeginForm())
+{
+    if (Model.InstitutionDetail.keys != null && Model.InstitutionDetail.keys.Count() > 1)
+    {
+    <div style="text-align: center; margin-top: 20px;">
+        <span class="details">Discover And Add Credentials:</span>
+        <div class="wrapper" style="height: 125px;">
+            <table class="reportsTable" width="95%" cellspacing="5px" cellpadding="5px">
+                <tbody>
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => modelItem.InstitutionDetail.keys.FirstOrDefault(k => k.displayOrder == 1).name)
+                        </td>
+                        <td>
+                            @Html.EditorFor(modelItem => modelItem.Value1)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => modelItem.InstitutionDetail.keys.FirstOrDefault(k => k.displayOrder == 2).name)
+                        </td>
+                        <td>
+                            @Html.EditorFor(modelItem => modelItem.Value2)
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <input type="submit" value="Submit" class="defaultBtn" />
+    </div>
+    }
+}

@@ -1,0 +1,120 @@
+﻿@model Intuit.Ipp.DataAggregation.Data.Account
+@{
+    string name = Model.GetType().Name;
+    string type = null;
+    if (name.Equals("BankingAccount"))
+    {
+        Intuit.Ipp.DataAggregation.Data.BankingAccount account = Model as Intuit.Ipp.DataAggregation.Data.BankingAccount;
+        type = account.bankingAccountType.ToString();
+    }
+    else if (name.Equals("CreditAccount"))
+    {
+        Intuit.Ipp.DataAggregation.Data.CreditAccount account = Model as Intuit.Ipp.DataAggregation.Data.CreditAccount;
+        type = account.creditAccountType.ToString();
+    }
+    else if (name.Equals("InvestmentAccount"))
+    {
+        Intuit.Ipp.DataAggregation.Data.InvestmentAccount account = Model as Intuit.Ipp.DataAggregation.Data.InvestmentAccount;
+        type = account.investmentAccountType.ToString();
+    }
+    else if (name.Equals("LoanAccount"))
+    {
+        Intuit.Ipp.DataAggregation.Data.LoanAccount account = Model as Intuit.Ipp.DataAggregation.Data.LoanAccount;
+        type = account.loanType.ToString();
+    }
+    else if (name.Equals("RewardsAccount"))
+    {
+        Intuit.Ipp.DataAggregation.Data.RewardsAccount account = Model as Intuit.Ipp.DataAggregation.Data.RewardsAccount;
+        type = account.programType;
+    }
+    else if (name.Equals("OtherAccount"))
+    {
+        type = "NONE";
+    }
+}
+<span class="details">Account Details: </span>
+<table class="reportsTable" width="95%" cellspacing="5px" cellpadding="5px">
+    <tbody>
+        <tr>
+            <td>
+                Account Number:
+            </td>
+            <td style="font-weight: bold;">
+                @Html.DisplayFor(modelItem => modelItem.accountNumber)
+            </td>
+            <td>
+                Account Id:
+            </td>
+            <td style="font-weight: bold;">
+                @Html.DisplayFor(modelItem => modelItem.accountId)
+            </td>
+            <td>
+                Account Nick Name:
+            </td>
+            <td style="font-weight: bold;">
+                @Html.DisplayFor(modelItem => modelItem.accountNickname)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Type:
+            </td>
+            <td style="font-weight: bold;">
+                @name
+            </td>
+            <td>
+                Balance Amount:
+            </td>
+            <td style="font-weight: bold;">
+                @Html.DisplayFor(modelItem => modelItem.balanceAmount)
+            </td>
+            <td>
+                Status:
+            </td>
+            <td style="font-weight: bold;">
+                @Html.DisplayFor(modelItem => modelItem.status)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Institution Id:
+            </td>
+            <td style="font-weight: bold;">
+                @Html.DisplayFor(modelItem => modelItem.institutionId)
+            </td>
+            <td>
+                Institution Login Id:
+            </td>
+            <td style="font-weight: bold;">
+                @Html.DisplayFor(modelItem => modelItem.institutionLoginId)
+            </td>
+            <td>
+                Account Type:
+            </td>
+            <td style="font-weight: bold;">
+                @type
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Balance Date:
+            </td>
+            <td style="font-weight: bold;">
+                @Html.DisplayFor(modelItem => modelItem.balanceDate)
+            </td>
+            <td>
+                Last Txn Date:
+            </td>
+            <td style="font-weight: bold;">
+                @Html.DisplayFor(modelItem => modelItem.lastTxnDate)
+            </td>
+            <td>
+                Aggr Success Date:
+            </td>
+            <td style="font-weight: bold;">
+                @Html.DisplayFor(modelItem => modelItem.aggrSuccessDate)
+            </td>
+        </tr>
+    </tbody>
+</table>
+<div id="deleteDiv">@Html.ActionLink("Delete", "Delete", new { id = Model.accountId })</div>

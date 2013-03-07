@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="shortcut icon" href="http://images.smallbusiness.intuit.com/sbweb/common/images/icons/favicon.ico"
+        type="image/x-icon" />
+    <link href="@System.Web.Optimization.BundleTable.Bundles.ResolveBundleUrl("~/Content/css")" rel="stylesheet" type="text/css" />
+    <link href="@System.Web.Optimization.BundleTable.Bundles.ResolveBundleUrl("~/Content/themes/base/css")" rel="stylesheet" type="text/css" />
+    <script src="@System.Web.Optimization.BundleTable.Bundles.ResolveBundleUrl("~/Scripts/js")"></script>
+</head>
+<body>
+    <header>
+        <div id="intuitLogo">
+            <a href="http://intuit.com"></a>
+        </div>
+        <div id="aggCatLogo">
+            <a href="../Home/Index"></a>
+        </div>
+        <nav id="linksNav">
+            <ul>
+                <li><a href="http://intuit.com">Intuit</a> </li>
+                <li><a href="http://docs.developer.intuit.com/0020_Aggregation_Categorization_Apps">
+                    Customer Account Data (AggCat) Services</a> </li>
+                <li><a href="http://docs.developer.intuit.com/0020_Aggregation_Categorization_Apps/DevKits/0250.NET_AggCat_DevKit_1.0">Documentation</a> </li>
+                <li><a href="http://www.asp.net/mvc/mvc4">MVC 4</a> </li>
+                <li><a href="http://windowsazure.com">Azure</a> </li>
+            </ul>
+        </nav>
+        <nav id="mainNav">
+            <ul>
+                <li><a href="/Home/Index">Home</a> </li>
+                <li><a href="/Institutions/Index">Institutions</a> </li>
+                <li><a href="/Accounts/Index">Customer Accounts</a> </li>
+                <li><a href="/Customer/Index">Delete Customer</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="main">
+        <div style="padding: 20px;">
+            @RenderBody()
+        </div>
+    </div>
+    <footer>
+        <div class="content-wrapper">
+            <div class="float-left" style="margin-left: 15px; color: White;">
+                <p>
+                    &copy; @DateTime.Now.Year - Intuit Inc. All rights reserved.</p>
+            </div>
+            <div class="float-right">
+                <ul id="social">
+                    <li><a href="http://www.facebook.com/intuit" class="facebook" target="_blank">Facebook</a></li>
+                    <li><a href="http://twitter.com/#!/intuit" class="twitter" target="_blank">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
