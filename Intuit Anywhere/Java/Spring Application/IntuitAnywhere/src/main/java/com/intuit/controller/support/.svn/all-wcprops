@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/repos/ipp_java_devkit/!svn/ver/1486/branches/IA%20Sample%20Applications/Spring%20Application/IntuitAnywhere/src/main/java/com/intuit/controller/support
+END
+BluedotController.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/svn/repos/ipp_java_devkit/!svn/ver/1486/branches/IA%20Sample%20Applications/Spring%20Application/IntuitAnywhere/src/main/java/com/intuit/controller/support/BluedotController.java
+END
+OAuthController.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/svn/repos/ipp_java_devkit/!svn/ver/1486/branches/IA%20Sample%20Applications/Spring%20Application/IntuitAnywhere/src/main/java/com/intuit/controller/support/OAuthController.java
+END
+OpenIdController.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/svn/repos/ipp_java_devkit/!svn/ver/1486/branches/IA%20Sample%20Applications/Spring%20Application/IntuitAnywhere/src/main/java/com/intuit/controller/support/OpenIdController.java
+END
