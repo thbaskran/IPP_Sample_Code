@@ -45,42 +45,35 @@
     <Reference Include="DevDefined.OAuth">
       <HintPath>..\packages\DevDefined.OAuth.0.1\lib\DevDefined.OAuth.dll</HintPath>
     </Reference>
-    <Reference Include="DotNetOpenAuth, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
-      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.2.0\lib\DotNetOpenAuth.dll</HintPath>
+    <Reference Include="DotNetOpenAuth">
+      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.2.1\lib\DotNetOpenAuth.dll</HintPath>
     </Reference>
     <Reference Include="HtmlAgilityPack">
       <HintPath>..\packages\AjaxControlToolkit.4.1.60919\lib\40\SanitizerProviders\HtmlAgilityPack.dll</HintPath>
     </Reference>
-    <Reference Include="Intuit.Ipp.DataAggregation.AggregationCategorizationServices, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.2.0\lib\Intuit.Ipp.DataAggregation.AggregationCategorizationServices.dll</HintPath>
+    <Reference Include="Intuit.Ipp.DataAggregation.AggregationCategorizationServices">
+      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.2.1\lib\Intuit.Ipp.DataAggregation.AggregationCategorizationServices.dll</HintPath>
     </Reference>
-    <Reference Include="Intuit.Ipp.DataAggregation.Core, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.2.0\lib\Intuit.Ipp.DataAggregation.Core.dll</HintPath>
+    <Reference Include="Intuit.Ipp.DataAggregation.Core">
+      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.2.1\lib\Intuit.Ipp.DataAggregation.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Intuit.Ipp.DataAggregation.Data, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.2.0\lib\Intuit.Ipp.DataAggregation.Data.dll</HintPath>
+    <Reference Include="Intuit.Ipp.DataAggregation.Data">
+      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.2.1\lib\Intuit.Ipp.DataAggregation.Data.dll</HintPath>
     </Reference>
-    <Reference Include="Intuit.Ipp.DataAggregation.Exception, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.2.0\lib\Intuit.Ipp.DataAggregation.Exception.dll</HintPath>
+    <Reference Include="Intuit.Ipp.DataAggregation.Exception">
+      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.2.1\lib\Intuit.Ipp.DataAggregation.Exception.dll</HintPath>
     </Reference>
-    <Reference Include="Intuit.Ipp.DataAggregation.Retry, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.2.0\lib\Intuit.Ipp.DataAggregation.Retry.dll</HintPath>
+    <Reference Include="Intuit.Ipp.DataAggregation.Retry">
+      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.2.1\lib\Intuit.Ipp.DataAggregation.Retry.dll</HintPath>
     </Reference>
-    <Reference Include="Intuit.Ipp.DataAggregation.Security, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.2.0\lib\Intuit.Ipp.DataAggregation.Security.dll</HintPath>
+    <Reference Include="Intuit.Ipp.DataAggregation.Security">
+      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.2.1\lib\Intuit.Ipp.DataAggregation.Security.dll</HintPath>
     </Reference>
-    <Reference Include="Intuit.Ipp.DataAggregation.Utility, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.2.0\lib\Intuit.Ipp.DataAggregation.Utility.dll</HintPath>
+    <Reference Include="Intuit.Ipp.DataAggregation.Utility">
+      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.2.1\lib\Intuit.Ipp.DataAggregation.Utility.dll</HintPath>
     </Reference>
-    <Reference Include="Intuit.Ipp.Diagnostics, Version=3.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.2.0\lib\Intuit.Ipp.Diagnostics.dll</HintPath>
+    <Reference Include="Intuit.Ipp.Diagnostics">
+      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.2.1\lib\Intuit.Ipp.Diagnostics.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="SanitizerProviders">
