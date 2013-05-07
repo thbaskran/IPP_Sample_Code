@@ -32,7 +32,7 @@ public class WebUtils {
 	public static final Logger LOG = Logger.getLogger(WebUtils.class);
 
 	public static Properties propConfig = null;
-	public static String PROP_FILE = "ia.properties";
+	public static String PROP_FILE = "qbapi.properties";
 
 	public static String APP_TOKEN;
 	public static String OAUTH_CONSUMER_KEY;
