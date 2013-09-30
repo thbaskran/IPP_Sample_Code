@@ -14,6 +14,8 @@
     <AssemblyName>AggCatDotNetWebFormsSampleApp</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -49,28 +51,28 @@
       <HintPath>..\packages\AjaxControlToolkit.4.1.60919\lib\40\SanitizerProviders\HtmlAgilityPack.dll</HintPath>
     </Reference>
     <Reference Include="Intuit.Ipp.DataAggregation.AggregationCategorizationServices">
-      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.4.0\lib\Intuit.Ipp.DataAggregation.AggregationCategorizationServices.dll</HintPath>
+      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.5.0\lib\Intuit.Ipp.DataAggregation.AggregationCategorizationServices.dll</HintPath>
     </Reference>
     <Reference Include="Intuit.Ipp.DataAggregation.Core">
-      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.4.0\lib\Intuit.Ipp.DataAggregation.Core.dll</HintPath>
+      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.5.0\lib\Intuit.Ipp.DataAggregation.Core.dll</HintPath>
     </Reference>
     <Reference Include="Intuit.Ipp.DataAggregation.Data">
-      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.4.0\lib\Intuit.Ipp.DataAggregation.Data.dll</HintPath>
+      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.5.0\lib\Intuit.Ipp.DataAggregation.Data.dll</HintPath>
     </Reference>
     <Reference Include="Intuit.Ipp.DataAggregation.Exception">
-      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.4.0\lib\Intuit.Ipp.DataAggregation.Exception.dll</HintPath>
+      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.5.0\lib\Intuit.Ipp.DataAggregation.Exception.dll</HintPath>
     </Reference>
     <Reference Include="Intuit.Ipp.DataAggregation.Retry">
-      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.4.0\lib\Intuit.Ipp.DataAggregation.Retry.dll</HintPath>
+      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.5.0\lib\Intuit.Ipp.DataAggregation.Retry.dll</HintPath>
     </Reference>
     <Reference Include="Intuit.Ipp.DataAggregation.Security">
-      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.4.0\lib\Intuit.Ipp.DataAggregation.Security.dll</HintPath>
+      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.5.0\lib\Intuit.Ipp.DataAggregation.Security.dll</HintPath>
     </Reference>
     <Reference Include="Intuit.Ipp.DataAggregation.Utility">
-      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.4.0\lib\Intuit.Ipp.DataAggregation.Utility.dll</HintPath>
+      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.5.0\lib\Intuit.Ipp.DataAggregation.Utility.dll</HintPath>
     </Reference>
     <Reference Include="Intuit.Ipp.Diagnostics">
-      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.4.0\lib\Intuit.Ipp.Diagnostics.dll</HintPath>
+      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.5.0\lib\Intuit.Ipp.Diagnostics.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="SanitizerProviders">
@@ -243,6 +245,7 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
