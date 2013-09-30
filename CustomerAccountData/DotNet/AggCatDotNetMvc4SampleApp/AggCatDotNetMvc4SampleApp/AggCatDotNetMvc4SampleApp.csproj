@@ -15,6 +15,8 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>false</UseIISExpress>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -34,43 +36,44 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DotNetOpenAuth, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
-      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.2.1\lib\DotNetOpenAuth.dll</HintPath>
+    <Reference Include="DotNetOpenAuth, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.Ultimate.4.3.1.13153\lib\net40-full\DotNetOpenAuth.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.4.1.10331.0\lib\net40\EntityFramework.dll</HintPath>
     </Reference>
-    <Reference Include="Intuit.Ipp.DataAggregation.AggregationCategorizationServices, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Intuit.Ipp.DataAggregation.AggregationCategorizationServices, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.2.1\lib\Intuit.Ipp.DataAggregation.AggregationCategorizationServices.dll</HintPath>
+      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.5.0\lib\Intuit.Ipp.DataAggregation.AggregationCategorizationServices.dll</HintPath>
     </Reference>
-    <Reference Include="Intuit.Ipp.DataAggregation.Core, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Intuit.Ipp.DataAggregation.Core, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.2.1\lib\Intuit.Ipp.DataAggregation.Core.dll</HintPath>
+      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.5.0\lib\Intuit.Ipp.DataAggregation.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Intuit.Ipp.DataAggregation.Data, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Intuit.Ipp.DataAggregation.Data, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.2.1\lib\Intuit.Ipp.DataAggregation.Data.dll</HintPath>
+      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.5.0\lib\Intuit.Ipp.DataAggregation.Data.dll</HintPath>
     </Reference>
-    <Reference Include="Intuit.Ipp.DataAggregation.Exception, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Intuit.Ipp.DataAggregation.Exception, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.2.1\lib\Intuit.Ipp.DataAggregation.Exception.dll</HintPath>
+      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.5.0\lib\Intuit.Ipp.DataAggregation.Exception.dll</HintPath>
     </Reference>
-    <Reference Include="Intuit.Ipp.DataAggregation.Retry, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Intuit.Ipp.DataAggregation.Retry, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.2.1\lib\Intuit.Ipp.DataAggregation.Retry.dll</HintPath>
+      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.5.0\lib\Intuit.Ipp.DataAggregation.Retry.dll</HintPath>
     </Reference>
-    <Reference Include="Intuit.Ipp.DataAggregation.Security, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Intuit.Ipp.DataAggregation.Security, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.2.1\lib\Intuit.Ipp.DataAggregation.Security.dll</HintPath>
+      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.5.0\lib\Intuit.Ipp.DataAggregation.Security.dll</HintPath>
     </Reference>
-    <Reference Include="Intuit.Ipp.DataAggregation.Utility, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Intuit.Ipp.DataAggregation.Utility, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.2.1\lib\Intuit.Ipp.DataAggregation.Utility.dll</HintPath>
+      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.5.0\lib\Intuit.Ipp.DataAggregation.Utility.dll</HintPath>
     </Reference>
-    <Reference Include="Intuit.Ipp.Diagnostics, Version=3.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Intuit.Ipp.Diagnostics, Version=1.0.8.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.2.1\lib\Intuit.Ipp.Diagnostics.dll</HintPath>
+      <HintPath>..\packages\IPPAggCatDotNetDevKit.1.5.0\lib\Intuit.Ipp.Diagnostics.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -299,4 +302,5 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
 </Project>
