@@ -54,7 +54,13 @@
 		<dependency>
 			<groupId>com.intuit</groupId>
 			<artifactId>ipp-java-devkit</artifactId>
-			<version>2.0.10</version>
+			<version>2.0.13</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.intuit.code.devkit</groupId>
+			<artifactId>ipp-java-qbhelper</artifactId>
+			<version>1.1.0</version>
 		</dependency>
 
 		<dependency>

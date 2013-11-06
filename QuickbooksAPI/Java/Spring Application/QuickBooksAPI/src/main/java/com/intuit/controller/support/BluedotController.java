@@ -13,7 +13,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.intuit.platform.client.PlatformClient;
+import com.intuit.ia.connection.IAPlatformClient;
 import com.intuit.platform.client.PlatformSessionContext;
 import com.intuit.utils.WebUtils;
 
@@ -53,9 +53,10 @@ public class BluedotController {
 					&& realmID != null) {
 				context = webutils.getPlatformContext(accesstoken,
 						accessstokensecret, realmID, dataSource);
-				final PlatformClient pClient = new PlatformClient();
+				final IAPlatformClient pClient = new IAPlatformClient();
 				final StringBuffer stringBuffer = new StringBuffer();
-				final List<String> menuList = pClient.getAppMenu(context);
+				final List<String> menuList = pClient.getAppMenu(WebUtils.OAUTH_CONSUMER_KEY, WebUtils.OAUTH_CONSUMER_SECRET, accesstoken, accessstokensecret);
+
 				if (menuList != null) {
 					for (String mItem : menuList) {
 						stringBuffer.append(mItem);

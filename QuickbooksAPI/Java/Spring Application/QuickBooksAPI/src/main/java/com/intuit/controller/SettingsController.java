@@ -11,7 +11,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.intuit.platform.client.PlatformClient;
+import com.intuit.ia.connection.IAPlatformClient;
 import com.intuit.platform.client.PlatformSessionContext;
 import com.intuit.utils.WebUtils;
 
@@ -99,9 +99,9 @@ public class SettingsController {
 					&& realmID != null) {
 				context = webutils.getPlatformContext(accesstoken,
 						accessstokensecret, realmID, dataSource);
-				final PlatformClient pClient = new PlatformClient();
+				final IAPlatformClient pClient = new IAPlatformClient();
+				pClient.disconnect(WebUtils.OAUTH_CONSUMER_KEY, WebUtils.OAUTH_CONSUMER_SECRET, accesstoken, accessstokensecret);
 
-				pClient.disconnect(context);
 
 			}
 		} catch (Exception e) {
