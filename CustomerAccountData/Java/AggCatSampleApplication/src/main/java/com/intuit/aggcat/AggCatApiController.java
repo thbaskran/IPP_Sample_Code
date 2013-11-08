@@ -27,12 +27,15 @@ import com.intuit.ipp.aggcat.data.InstitutionDetail;
 import com.intuit.ipp.aggcat.data.InstitutionLogin;
 import com.intuit.ipp.aggcat.data.Institutions;
 import com.intuit.ipp.aggcat.data.Transaction;
+import com.intuit.ipp.aggcat.data.Files;
 import com.intuit.ipp.aggcat.data.TransactionList;
 import com.intuit.ipp.aggcat.exception.AggCatException;
 import com.intuit.ipp.aggcat.service.AggCatService;
 import com.intuit.ipp.aggcat.service.ChallengeSession;
 import com.intuit.ipp.aggcat.service.DiscoverAndAddAccountsResponse;
 import com.intuit.ipp.aggcat.util.StringUtils;
+import net.sf.jmimemagic.*;
+import java.io.*;
 
 /**
  * 
@@ -96,7 +99,10 @@ public class AggCatApiController {
 			/*
 			 * Invoking the getInstitutions API to get the list of institutions.
 			 */
+
 			Institutions institutions = service.getInstitutions();
+			Files files = service.listFiles();
+			System.out.println("List files completed");
 			logger.info("Fetched " + institutions.getInstitutions().size() + " institutions");
 			/*
 			 * Preparing a List<List<String>> from the Institutions object so as to render it in HTML table.
@@ -314,7 +320,7 @@ public class AggCatApiController {
 		 */
 		AggCatService service = (AggCatService) session.getAttribute("AggCatService");
 		try {
-			List<String> challengeList = new ArrayList<String>();
+			List<Object> challengeList = new ArrayList<Object>();
 			logger.info("Created service for discover and add accounts");
 			/*
 			 * Fetching the institutionId,userNameText and passwordText from the session.
@@ -358,6 +364,22 @@ public class AggCatApiController {
 							//Getting the challenge questions.
 							challengeList.add(challenge.getTextsAndImagesAndChoices().get(counter).toString());
 							logger.info("Question " + challenge.getTextsAndImagesAndChoices().get(counter).toString());
+						} else if(challenge.getTextsAndImagesAndChoices().get(counter) instanceof byte[])
+						{
+							System.out.println("Inside image challenge");
+							challengeList.add(challenge.getTextsAndImagesAndChoices().get(counter));
+							logger.info("Image " + challenge.getTextsAndImagesAndChoices().get(counter));
+							try{
+							//ByteArrayOutputStream out = new ByteArrayOutputStream();
+						    //ObjectOutputStream os = new ObjectOutputStream(out);
+						    //os.writeObject(out.toByteArray());
+						    byte[] ba = (byte[])challenge.getTextsAndImagesAndChoices().get(counter);//out.toByteArray();
+							MagicMatch match = Magic.getMagicMatch(ba);
+							System.out.println("GetMimeType" + match.getMimeType());
+							}catch(Exception e)
+							{
+								e.printStackTrace();
+							}
 						}
 					}
 				}
@@ -445,8 +467,8 @@ public class AggCatApiController {
 			 * Invoking the API discoverAndAddAccounts by providing challengeResponses and challengeSession This time the output will be an
 			 * AccountList object (if successful) since the additional authentication is provided.
 			 */
-			AccountList accountListObj = service.discoverAndAddAccounts(challengeResponses, challengeSession);
-
+			DiscoverAndAddAccountsResponse discoverAndAddAccounts = service.discoverAndAddAccounts(challengeResponses, challengeSession);
+			AccountList accountListObj = discoverAndAddAccounts.getAccountList();
 			/*
 			 * Preparing the accountList for rendering by using the selected fields from accountListObj.
 			 */
