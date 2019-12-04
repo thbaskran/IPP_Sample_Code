@@ -1,1 +1,176 @@
-<mxfile host="www.draw.io" modified="2019-12-04T10:03:10.415Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36" version="12.3.6" etag="nYH534fFanRZHdgT3q9R" type="github"><diagram id="cyR1P2OZR4NSbHlCghSR">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="www.draw.io" modified="2019-12-04T10:04:29.425Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36" etag="CrBj1RU506EYj_TV5VHm" version="12.3.6" type="github" pages="1">
+  <diagram id="cyR1P2OZR4NSbHlCghSR" name="Page-1">
+    <mxGraphModel dx="782" dy="1569" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-1" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry y="-10" width="830" height="830" as="geometry"/>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-2" value="&lt;font style=&quot;font-size: 22px&quot;&gt;&amp;nbsp;SP Online - High Level Architecture&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="315" y="20" width="150" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF66FF;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="30" y="105" width="100" height="105" as="geometry"/>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-4" value="Client Layer" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="105" width="70" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-5" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6E6E6;strokeColor=#d6b656;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="140" y="105" width="470" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-6" value="Browser&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="30" y="150" width="70" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-7" value="Mobile" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="65" y="155" width="70" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-8" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0066CC;gradientColor=none;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="170" y="125" width="130" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-9" value="&lt;font color=&quot;#ffffff&quot;&gt;Views&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#B5739D;" vertex="1" parent="1">
+          <mxGeometry x="205" y="130" width="40" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-10" value="&lt;font color=&quot;#ffffff&quot;&gt;HTML5\ CSS3&lt;br&gt;Angular JS&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#B5739D;" vertex="1" parent="1">
+          <mxGeometry x="145" y="155" width="170" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-11" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0066CC;gradientColor=none;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="323" y="125.5" width="110" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-12" value="&lt;font color=&quot;#ffffff&quot;&gt;Angular JS Controller and Services&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#B5739D;" vertex="1" parent="1">
+          <mxGeometry x="338" y="144" width="75" height="23" as="geometry"/>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-13" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0066CC;gradientColor=none;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="460" y="125" width="110" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-14" value="&lt;font color=&quot;#ffffff&quot;&gt;Angular JS &amp;nbsp;Model&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#B5739D;" vertex="1" parent="1">
+          <mxGeometry x="475" y="145" width="75" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-15" value="Web Layer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF9999;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="30" y="250" width="100" height="105" as="geometry"/>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-16" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6E6E6;strokeColor=#d6b656;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="140" y="254" width="470" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-17" value="&lt;span&gt;&lt;font color=&quot;#ffffff&quot;&gt;SharePoint &lt;br&gt;App Parts&lt;/font&gt;&lt;/span&gt;&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0066CC;gradientColor=none;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="230" y="275" width="110" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-18" value="&lt;font color=&quot;#ffffff&quot;&gt;Validation Helpers&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0066CC;gradientColor=none;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="378" y="274" width="110" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-19" value="" style="endArrow=classic;startArrow=classic;html=1;fillColor=#FF9933;fontColor=#FFFFFF;strokeWidth=3;strokeColor=#CC6600;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="210" as="sourcePoint"/>
+            <mxPoint x="370" y="252" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-20" value="" style="endArrow=classic;startArrow=classic;html=1;fillColor=#FF9933;fontColor=#FFFFFF;strokeWidth=3;strokeColor=#CC6600;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="359" as="sourcePoint"/>
+            <mxPoint x="370" y="401" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-21" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6d0de;gradientColor=#d5739d;strokeColor=#996185;" vertex="1" parent="1">
+          <mxGeometry x="671" y="200" width="100" height="182" as="geometry"/>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-22" value="Cross Cutting Layer" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="638" y="282" width="90" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-23" value="Caching&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="669" y="301.5" width="90" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-24" value="Security" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="732" y="217" width="29" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-25" value="User Management" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="712" y="297" width="69" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-26" value="Document Management" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="697" y="237" width="39" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-27" value="" style="endArrow=classic;startArrow=classic;html=1;strokeColor=#CC6600;strokeWidth=3;fillColor=#FF9933;fontColor=#FFFFFF;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="611" y="301.5" as="sourcePoint"/>
+            <mxPoint x="671" y="302.5" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-28" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6E6E6;strokeColor=#d6b656;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="140" y="400" width="470" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-29" value="Service and business Layer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EA6B66;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="30" y="400" width="100" height="105" as="geometry"/>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-30" value="&lt;span&gt;&lt;font color=&quot;#ffffff&quot;&gt;Business Services&lt;/font&gt;&lt;/span&gt;&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0066CC;gradientColor=none;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="228" y="420" width="110" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-31" value="&lt;font color=&quot;#ffffff&quot;&gt;SharePoint Rest Service&amp;nbsp;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0066CC;gradientColor=none;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="395" y="422" width="110" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-32" value="Data Access Layer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF66FF;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="30" y="540" width="100" height="105" as="geometry"/>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-33" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6E6E6;strokeColor=#d6b656;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="150" y="545" width="260" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-34" value="" style="endArrow=classic;startArrow=classic;html=1;strokeColor=#CC6600;strokeWidth=3;fillColor=#FF9933;fontColor=#FFFFFF;exitX=1.002;exitY=0.6;entryX=0.5;entryY=1;exitPerimeter=0;" edge="1" parent="1" source="MeeS510Dq_Tf37RMXS9o-28" target="MeeS510Dq_Tf37RMXS9o-21">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="611" y="431" as="sourcePoint"/>
+            <mxPoint x="671" y="432" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="620" y="460"/>
+              <mxPoint x="721" y="460"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-35" value="&lt;span&gt;&lt;font color=&quot;#ffffff&quot;&gt;Data Access\SP Helper&lt;/font&gt;&lt;/span&gt;&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0066CC;gradientColor=none;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="280" y="565" width="110" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-36" value="" style="endArrow=classic;startArrow=classic;html=1;fillColor=#FF9933;fontColor=#FFFFFF;strokeWidth=3;strokeColor=#CC6600;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="297.5" y="499" as="sourcePoint"/>
+            <mxPoint x="297.5" y="541" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-37" value="Persistence Layer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE599;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="35" y="679" width="100" height="105" as="geometry"/>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-38" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6E6E6;strokeColor=#d6b656;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="149" y="684.5" width="470" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-39" value="" style="endArrow=classic;startArrow=classic;html=1;fillColor=#FF9933;fontColor=#FFFFFF;strokeWidth=3;strokeColor=#CC6600;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="299.5" y="644" as="sourcePoint"/>
+            <mxPoint x="299.5" y="686" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="300" y="664"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-40" value="O365 Content DB" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#6666FF;gradientColor=none;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="258" y="695" width="80" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-41" value="&lt;span&gt;&lt;font color=&quot;#ffffff&quot;&gt;Data Access Components&lt;/font&gt;&lt;/span&gt;&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0066CC;gradientColor=none;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="160" y="565" width="110" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-42" value="" style="endArrow=classic;startArrow=classic;html=1;fillColor=#FF9933;fontColor=#FFFFFF;strokeWidth=3;strokeColor=#CC6600;exitX=0.668;exitY=1;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="442" y="500" as="sourcePoint"/>
+            <mxPoint x="442" y="680" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-43" value="" style="endArrow=none;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="870" as="sourcePoint"/>
+            <mxPoint x="50" y="820" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MeeS510Dq_Tf37RMXS9o-44" value="" style="endArrow=none;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="940" as="sourcePoint"/>
+            <mxPoint x="50" y="890" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
